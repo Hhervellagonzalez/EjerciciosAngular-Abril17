@@ -1,0 +1,5 @@
+<h2>Lista de productos</h2>
+<p>Haga click en el producto que quiere añadir</p>
+@for (producto of productos; track producto) {
+    <button type="button" (click)="enviarPadre(producto)">{{producto}}</button><br>
+}
